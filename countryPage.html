@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/countryPage.css" />
+  <link rel="stylesheet" href="styles/overlayStyle.css" />
+  <link rel="stylesheet" href="styles/cityOverlayStyle.css" />
+  <link rel="stylesheet" href="styles/headerHamburger.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <title>Landsida</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header" onclick="location.href='start.html'"></div>
+    <div id="hamburger">
+      <span id="hamburgerMenu">
+        <div style="font-size:30px;cursor:pointer" onclick="openHamburger()">&#9776;</div>
+      </span>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeHamburger()">&times;</a>
+      </div>
+    </div>
+    <div class="addStorytel"></div>
+    <h3 id="title">Välj Land</h3>
+    <div id="countryButtons"></div>
+
+    <h3 id="title">Städer</h3>
+    <div class="addAdlibris"></div>
+    <div id="cityOverlay" class="cityOverlay">
+      <div id="programme"></div>
+    </div>
+
+    <div id="programmeOverlay" class="programmeOverlay"></div>
+
+    <div id="cities"></div>
+
+    <div id="footer">
+      <h3>Om oss</h3>
+    </div>
+  </div>
+
+  <script src="script/commentsProgramme.js"></script>
+  <script src="script/database.js"></script>
+  <script src="script/createCitiesFilterElements.js"></script>
+  <script src="script/createCityOverlay.js"></script>
+  <script src="script/createProgrammeOverlay.js"></script>
+  <script src="script/cityProgrammeOverlay.js"></script>
+  <script src="script/aboutUsDatabase.js"></script>
+  <script src="script/hamburgerMenu.js"></script>
+  <script src="script/buildFooter.js"></script>
+  <script src="script/buildHeader.js"></script>
+  <script src="script/add.js"></script>
+  <script src="script/createFunctionCountryButtons.js"></script>
+  <script src="script/add.js"></script>
+  <script src="script/countryPage.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+:root {
+  --beige: #fbefd1;
+  --green: #c7e2bf;
+  --darkgreen: #79ab8d;
+  --fontStile: 'proxima-nova', sans-serif;
+  --fontSizeText: 16px;
+  --fontSizeTitle: 20px;
+  --greenOpacity: #c7e2bfb3;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--beige);
+  font-family: var(--fontStile);
+}
+
+h3 {
+  font-size: var(--fontSizeTitle);
+}
+
+p {
+  font-size: var(--fontSizeText);
+}
+
+button {
+  font-size: var(--fontSizeText);
+}
+
+#fieldButtons {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.programmesBox {
+  border: var(--darkgreen) dotted 0.2px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #c7e2bf65;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+/* gör att man inte kan klicka på p eller h3*/
+
+.programmesBox > h3,
+.programmesBox > p {
+  pointer-events: none;
+}
+
+button {
+  position: relative;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: var(--green);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button-active {
+  background-color: var(--darkgreen);
+  inset: 1px;
+  box-shadow: inset 0 0 10px #2e3b2f;
+}
+
+#title {
+  padding: 0px 10px 0px 10px;
+}
